@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: black;
+    font-size: 1.0rem;
+}
+
+.header .container1 .left{
+    width:200px; 
+    height:50px;
+}
+.header .container1 .left:hover{
+    animation: myship 1s;
+}
+
+@keyframes myship{
+    from {padding-left: 1rem;} 
+    to{padding-left: 2rem;}
+}
+
+.container1{
+    display: flex;
+}
+
+.giohang{
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    border-width: 2px;
+    color: green;
+    padding: 0.6rem;
+}
+
+.giohang i{
+    color: green;
+    font-size: small;
+}
+
+.items li i:hover{
+    color: green;
+}
+.container2{
+    text-align: center;
+    padding:10px 0 10px 0;
+    box-shadow: 0 0 5px #3d3d3d;
+}
+
+
+.container1 .left{
+    margin: 0.5rem 2rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.container1 .center{
+    flex: 1;
+    margin: 0.5rem 2rem;
+    text-align: center;
+}
+
+.center-fading{
+    width: 80px;
+}
+
+.container1 .right{
+    text-align: right;
+    margin: 2rem 2rem;
+}
+
+.items li{
+    display: inline-block;
+    margin-left: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+a:hover{
+    color: green;
+}
+
+.slider{
+    text-align: center;
+    overflow: hidden;
+
+    height: 576px;
+    width: 1840px;
+    margin: 0 auto;
+}
+
+.wraper{
+    width: 6853px;
+    -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+    text-align: center;
+    float: left;
+    width: 1840px;
+}
+@-webkit-keyframes slide {
+    0%  {margin-left: 0px;}
+    10% {margin-left: 0px;}
+    20% {margin-left: -1840px;}
+    30% {margin-left: -1840px;}
+    40% {margin-left: -3680px;}
+    50% {margin-left: -3680px;}
+}
+
+.small-container{
+    min-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-size: larger;
+}
+
+.title::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    text-align: center;
+}
+
+h5{
+    font-size: larger;
+    color: #555;
+    text-align: center;
+}
+
+.rating {
+    text-align: center;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+
+.row{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-4{
+    flex-basis: 15%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.6s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.button{
+    text-align: center;
+}
+
+.dathang{
+    margin-top: 5px;
+    color: green;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.dathang:hover{
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+.offer{
+    margin-top: 1rem;
+    background: #57A148;
+    padding-bottom: 2rem;
+}
+
+.col-2{
+    flex-basis: 25%;
+    min-width: 300px;
+}
+
+.col-2 h1{
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+.col-2 p{
+    margin: 25px 0px;
+}
+
+.col-2 a{
+    color: green;
+    border-style: solid;
+    border-color: green;
+    background-color:white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.col-2 a:hover{
+    border-color: white;
+    background-color: green;
+    color: white;
+}
+
+.offer .title{
+    color:white
+}
+
+.footer{
+    margin-top: 1rem;
+    background: #57A148;
+    padding-bottom: 2rem;
+}
+
+.footer .congty{
+    text-align: left;
+    color: white;
+    width: 30%;
+}
+
+.footer .khuyenmai span{
+    color: white;
+    font-size: larger;
+}
+
+.footer .khuyenmai input{
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.footer .khuyenmai button{
+    border-color: green;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.footer .khuyenmai button:hover{
+    border-color: white;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+.footer .title{
+    color: white;
+}
+
+.footer .mangxahoi li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer .mangxahoi a{
+    color: white;
+}
+
+.footer .mangxahoi a:hover{
+    color: green;
+}
+
+.footer .fa{
+    font-size: 2rem;
+    color: white;
+}
+
+.footer .fa:hover{
+    color: green;
+}
+
+.copyright{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.copyright a{
+   font-size: 1.2rem;
+}
